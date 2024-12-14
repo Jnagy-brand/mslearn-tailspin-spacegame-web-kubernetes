@@ -63,7 +63,7 @@ stages:
               action: createSecret
               connectionType: azureResourceManager
               secretName: $(imagePullSecret)
-              dockerRegistryEndpoint: 'Container Registry Connection'
+              dockerRegistryEndpoint: 'Kubernetes Cluster Connection Manual'
               azureSubscriptionConnection: 'Kubernetes Cluster Connection'
               azureResourceGroup: 'tailspin-space-game-rg'
               kubernetesCluster: 'tailspinspacegame-2008'
@@ -73,7 +73,7 @@ stages:
             inputs:
               action: deploy
               connectionType: azureResourceManager
-              azureSubscriptionConnection: 'Kubernetes Cluster Connection'
+              azureSubscriptionConnection: 'Kubernetes Cluster Connection Manual'
               azureResourceGroup: 'tailspin-space-game-rg'
               kubernetesCluster: 'tailspinspacegame-2008'
               namespace: 'default'
